@@ -23,10 +23,12 @@ class SourcesPresenter: SourcesPresenterProtocol {
 
 extension SourcesPresenter: SourcesInteractorOutputProtocol {
     func sourcesFetched(_ sources: [Source]) {
+       /* print("Fetched \(sources.count) sources") */ // Debug print
         view?.showSources(sources)
     }
 
     func sourcesFetchFailed(_ error: Error) {
+       /* print("Failed to fetch sources: \(error.localizedDescription)")*/  // Debug print
         view?.showError(error)
     }
 }

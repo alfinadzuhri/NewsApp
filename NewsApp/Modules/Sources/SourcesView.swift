@@ -36,35 +36,37 @@ class SourcesView: UIViewController, SourcesViewProtocol, UITableViewDelegate, U
 
     func showSources(_ sources: [Source]) {
         self.sources = sources
-       /* print("showSources called with \(sources.count) sources") */ // Debug print
         DispatchQueue.main.async {
+           /* print("Reloading table view with \(sources.count) sources")*/  // Debug print
             self.tableView.reloadData()
         }
     }
 
     func showError(_ error: Error) {
-        //
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       /* print("numberOfRowsInSection called, returning \(sources.count) rows")*/  // Debug print
         return sources.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SourceCell", for: indexPath)
         cell.textLabel?.text = sources[indexPath.row].name
-       /* print("cellForRowAt called for row \(indexPath.row), setting text to \(sources[indexPath.row].name)") */ // Debug print
+       /* print("Displaying source: \(sources[indexPath.row].name)")*/  // Debug print
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter.didSelectSource(sources[indexPath.row])
-        /*print("didSelectRowAt called for row \(indexPath.row)") */ // Debug print
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        /*print("Search text: \(searchText)"*/)  // Debug print
         presenter.searchSources(query: searchText)
-        /*print("searchBar textDidChange called with query \(searchText)") */ // Debug print
     }
 }

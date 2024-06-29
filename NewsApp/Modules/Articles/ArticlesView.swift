@@ -42,7 +42,7 @@ class ArticlesView: UIViewController, ArticlesViewProtocol, UITableViewDelegate,
     }
 
     func showError(_ error: Error) {
-        
+        // Display error message
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
