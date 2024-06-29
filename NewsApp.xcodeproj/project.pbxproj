@@ -44,7 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D9029D0B2C2FDDE500ED0585 /* test02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test02.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9029D0B2C2FDDE500ED0585 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9029D0E2C2FDDE600ED0585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9029D102C2FDDE600ED0585 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D9029D122C2FDDE600ED0585 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		D9029D022C2FDDE500ED0585 = {
 			isa = PBXGroup;
 			children = (
-				D9029D0D2C2FDDE600ED0585 /* test02 */,
+				D9029D0D2C2FDDE600ED0585 /* NewsApp */,
 				D9029D0C2C2FDDE500ED0585 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,12 +104,12 @@
 		D9029D0C2C2FDDE500ED0585 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9029D0B2C2FDDE500ED0585 /* test02.app */,
+				D9029D0B2C2FDDE500ED0585 /* NewsApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D9029D0D2C2FDDE600ED0585 /* test02 */ = {
+		D9029D0D2C2FDDE600ED0585 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
 				D9029D6A2C2FE1DC00ED0585 /* SupportingFiles */,
@@ -125,7 +125,7 @@
 				D9029D192C2FDDE600ED0585 /* LaunchScreen.storyboard */,
 				D9029D1C2C2FDDE600ED0585 /* Info.plist */,
 			);
-			path = test02;
+			path = NewsApp;
 			sourceTree = "<group>";
 		};
 		D9029D232C2FDEC600ED0585 /* Categories */ = {
@@ -226,9 +226,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D9029D0A2C2FDDE500ED0585 /* test02 */ = {
+		D9029D0A2C2FDDE500ED0585 /* NewsApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9029D1F2C2FDDE600ED0585 /* Build configuration list for PBXNativeTarget "test02" */;
+			buildConfigurationList = D9029D1F2C2FDDE600ED0585 /* Build configuration list for PBXNativeTarget "NewsApp" */;
 			buildPhases = (
 				D9029D072C2FDDE500ED0585 /* Sources */,
 				D9029D082C2FDDE500ED0585 /* Frameworks */,
@@ -238,9 +238,9 @@
 			);
 			dependencies = (
 			);
-			name = test02;
+			name = NewsApp;
 			productName = test02;
-			productReference = D9029D0B2C2FDDE500ED0585 /* test02.app */;
+			productReference = D9029D0B2C2FDDE500ED0585 /* NewsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -258,7 +258,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D9029D062C2FDDE500ED0585 /* Build configuration list for PBXProject "test02" */;
+			buildConfigurationList = D9029D062C2FDDE500ED0585 /* Build configuration list for PBXProject "NewsApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -271,7 +271,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9029D0A2C2FDDE500ED0585 /* test02 */,
+				D9029D0A2C2FDDE500ED0585 /* NewsApp */,
 			);
 		};
 /* End PBXProject section */
@@ -477,7 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = test02/Info.plist;
+				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -488,7 +488,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = name.zura.test02;
+				PRODUCT_BUNDLE_IDENTIFIER = name.zura.NewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -504,7 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = test02/Info.plist;
+				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -515,7 +515,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = name.zura.test02;
+				PRODUCT_BUNDLE_IDENTIFIER = name.zura.NewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -526,7 +526,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D9029D062C2FDDE500ED0585 /* Build configuration list for PBXProject "test02" */ = {
+		D9029D062C2FDDE500ED0585 /* Build configuration list for PBXProject "NewsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9029D1D2C2FDDE600ED0585 /* Debug */,
@@ -535,7 +535,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9029D1F2C2FDDE600ED0585 /* Build configuration list for PBXNativeTarget "test02" */ = {
+		D9029D1F2C2FDDE600ED0585 /* Build configuration list for PBXNativeTarget "NewsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9029D202C2FDDE600ED0585 /* Debug */,
