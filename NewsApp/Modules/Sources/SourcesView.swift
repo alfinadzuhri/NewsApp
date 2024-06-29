@@ -36,36 +36,35 @@ class SourcesView: UIViewController, SourcesViewProtocol, UITableViewDelegate, U
 
     func showSources(_ sources: [Source]) {
         self.sources = sources
-        print("showSources called with \(sources.count) sources")  // Debug print
+       /* print("showSources called with \(sources.count) sources") */ // Debug print
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
     }
 
     func showError(_ error: Error) {
-        // Display error message
-        print("Error: \(error.localizedDescription)")  // Debug print
+        //
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("numberOfRowsInSection called, returning \(sources.count) rows")  // Debug print
+       /* print("numberOfRowsInSection called, returning \(sources.count) rows")*/  // Debug print
         return sources.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SourceCell", for: indexPath)
         cell.textLabel?.text = sources[indexPath.row].name
-        print("cellForRowAt called for row \(indexPath.row), setting text to \(sources[indexPath.row].name)")  // Debug print
+       /* print("cellForRowAt called for row \(indexPath.row), setting text to \(sources[indexPath.row].name)") */ // Debug print
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter.didSelectSource(sources[indexPath.row])
-        print("didSelectRowAt called for row \(indexPath.row)")  // Debug print
+        /*print("didSelectRowAt called for row \(indexPath.row)") */ // Debug print
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         presenter.searchSources(query: searchText)
-        print("searchBar textDidChange called with query \(searchText)")  // Debug print
+        /*print("searchBar textDidChange called with query \(searchText)") */ // Debug print
     }
 }

@@ -13,6 +13,6 @@ class ArticlesInteractor: ArticlesInteractorProtocol {
     }
 
     func searchArticles(query: String) {
-        // Implement search logic
+        //
     }
 }

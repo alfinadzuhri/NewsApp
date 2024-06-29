@@ -36,7 +36,7 @@ class CategoriesView: UIViewController, CategoriesViewProtocol, UITableViewDeleg
     }
 
     func showError(_ error: Error) {
-        // Display error message
+        //
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -13,6 +13,6 @@ class SourcesInteractor: SourcesInteractorProtocol {
     }
 
     func searchSources(query: String) {
-        // Implement search logic
+        //
     }
 }
