@@ -2,7 +2,7 @@ import Foundation
 
 class APIClient {
     static let shared = APIClient()
-    private let apiKey = "b9f40b5172cc4f94bd07f6b26d85c5b8"
+    private let apiKey = "29edbce654bd4a438195ba835c4e5636"
     private let baseURL = "https://newsapi.org/v2/"
 
     func fetchCategories(completion: @escaping (Result<[Category], Error>) -> Void) {

@@ -66,7 +66,7 @@ class SourcesView: UIViewController, SourcesViewProtocol, UITableViewDelegate, U
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        /*print("Search text: \(searchText)"*/)  // Debug print
+        /*print("Search text: \(searchText)")*/  // Debug print
         presenter.searchSources(query: searchText)
     }
 }
