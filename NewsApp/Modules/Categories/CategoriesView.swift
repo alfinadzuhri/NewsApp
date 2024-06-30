@@ -27,16 +27,23 @@ class CategoriesView: UIViewController, CategoriesViewProtocol, UITableViewDeleg
     }
 
     func showCategories(_ categories: [Category]) {
-        self.categories = categories.map { category in
-            Category(id: category.id, category: category.category.capitalized)
-        }
+        self.categories = categories
+            .map { category in
+                Category(id: category.id, category: category.category.capitalized)
+            }
+            .sorted { $0.category < $1.category }
+        
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
     }
 
     func showError(_ error: Error) {
-        //
+        let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default))
+        DispatchQueue.main.async {
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -1,5 +1,3 @@
-import Foundation
-
 protocol ArticlesViewProtocol: AnyObject {
     func showArticles(_ articles: [Article])
     func showError(_ error: Error)
@@ -24,4 +22,3 @@ protocol ArticlesInteractorOutputProtocol: AnyObject {
 protocol ArticlesRouterProtocol: AnyObject {
     func navigateToArticleDetail(for article: Article)
 }
-
